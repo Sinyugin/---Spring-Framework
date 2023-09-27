@@ -16,5 +16,7 @@
         <property name="hibernate.hbm2ddl.auto">create-drop</property>
 
         <mapping class="com.example.springmvc.Product"/>
+        <mapping class="com.example.springmvc.Buyer"/>
+        <mapping class="com.example.springmvc.Order"/>
     </session-factory>
 </hibernate-configuration>

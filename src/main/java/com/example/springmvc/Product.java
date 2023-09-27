@@ -2,6 +2,9 @@ package com.example.springmvc;
 
 import jakarta.persistence.*;
 
+import java.util.List;
+
+
 @Entity
 @Table(name = "product")
 public class Product {
@@ -15,6 +18,10 @@ public class Product {
 
     @Column(name = "cost")
     private int cost;
+
+    @OneToMany
+    @JoinColumn(name = "product_id")
+    private List<Order> orders;
 
     public int getCost() {
         return cost;
